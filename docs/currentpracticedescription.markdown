@@ -25,7 +25,7 @@
 
 ## Установка
 
-![](./images/total_time_of_install_system.svg)
+![](https://github.com/Nurmukhamed/DesktopManagement/blob/master/images/total_time_of_install_system.svg)
 
 Процесс установки линейный, время затрачиваемое на установку рабочей станции складывается из:
 
