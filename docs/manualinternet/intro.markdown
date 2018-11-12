@@ -16,7 +16,7 @@
 * Постоянные инциденты Информационной Безопасностью - ботнеты, вирусы, студенты;
 * Отсутствие различных политик в управление рабочими станциями, резервными копированием, информационной безопасностью;
 
-Также будем считать, что у Байбека есть только своя рабочая станция, на которой он может запускать VirtualBox, VmWare Workstation, Hyper-V, KVM (выберите на свой вкус).
+Также будем считать, что у Байбека есть только своя рабочая станция, на которой он может запускать [VirtualBox](https://www.virtualbox.org/), [VmWare Workstation](https://www.vmware.com/products/workstation-pro.html), [Hyper-V](https://ru.wikipedia.org/wiki/Hyper-V), [KVM](https://ru.wikipedia.org/wiki/KVM) (выберите на свой вкус).
 
 
 [Previous](./usedresources.markdown) | [Up](../intro.markdown) | [Next](./prepare.markdown)
