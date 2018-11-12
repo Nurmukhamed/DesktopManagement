@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ncalayer</id>
+    <title>NCALayer</title>
+    <version>1.1</version>
+    <authors>National Information Technologies JSC</authors>
+    <owners>©  National Information Technologies JSC </owners>
+    <summary>Crypto utility to access EGOV.KZ E-goverment services in Republic of Kazakhstan</summary>
+    <description>You need that application to get access to egov.kz services</description>
+    <projectUrl>https://pki.gov.kz</projectUrl>
+    <tags></tags>
+    <licenseUrl>http://pki.gov.kz/index.php/en/ncalayer</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance> <!-- or true if you require the user to accept the License before installing -->
+    <iconUrl>http://pki.gov.kz/images/NCAeng.png</iconUrl>
+  </metadata>
+</package>

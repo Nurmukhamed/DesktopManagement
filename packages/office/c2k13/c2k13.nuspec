@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>c2k13</id>
+    <title>Microsoft Office Professional Plus 2013</title>
+    <version>15.0.4711.1003</version>
+    <authors>Microsoft</authors>
+    <owners>Nurmukhamed Artykaly</owners>
+    <summary>Microsoft Office Professional Plus 2013</summary>
+    <description>This will download and silently install the entire Microsoft Office Professional Plus 2013 Retail edition. A license is required and you will be prompted to enter your account information upon first launching the software after install.</description>
+    <projectUrl>http://office.microsoft.com/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/SurajGupta/Chocolatey-Packages/master/OfficeProPlus2013/icon.png</iconUrl>
+    <tags>Microsoft Office Professional Plus 2013</tags>
+    <licenseUrl>http://windows.microsoft.com/en-us/windows-live/microsoft-services-agreement</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

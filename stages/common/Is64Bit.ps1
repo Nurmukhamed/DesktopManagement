@@ -1,0 +1,1 @@
+function Is64Bit {  [IntPtr]::Size -eq 8  }
