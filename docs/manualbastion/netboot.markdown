@@ -1,0 +1,1 @@
+[Previous](./offline.markdown)| [Up](../intro.markdown) | [Next](./aftermaths.markdown)

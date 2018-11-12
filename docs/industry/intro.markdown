@@ -1,0 +1,1 @@
+[Previous](../manualbastion/aftermaths.markdown) | [Up](../intro.markdown) | [Next](./objectives.markdown)

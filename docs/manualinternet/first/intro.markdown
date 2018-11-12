@@ -1,0 +1,1 @@
+[Previous](../inventarization.markdown) | [Up](../intro.markdown) | [Next](./7.markdown)

@@ -1,0 +1,1 @@
+[Previous](./prepare.markdown) | [Up](../intro.markdown) | [Next](./inventarization.markdown)

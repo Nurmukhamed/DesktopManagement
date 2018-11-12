@@ -1,0 +1,1 @@
+[Previous](./objectives.markdown) | [Up](../intro.markdown) | [Next](./currentpracticeproandcontra.markdown)

@@ -1,0 +1,1 @@
+[Previous](../currentpracticeproandcontra.markdown) | [Up](../intro.markdown) | [Next](./usedresources.markdown)

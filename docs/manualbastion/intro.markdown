@@ -1,0 +1,1 @@
+[Previous](../manualinternet/aftermaths.markdown) | [Up](../intro.markdown) | [Next](./local/boxstarter.markdown)

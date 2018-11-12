@@ -1,0 +1,1 @@
+[Previous](../local/chocolatey.markdown) | [Up](../intro.markdown) | [Next](./7.markdown)

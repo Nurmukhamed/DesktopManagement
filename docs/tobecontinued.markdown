@@ -1,0 +1,1 @@
+[Previous](./industry/aftermaths.markdown) | **Up** | [Next](./literature.markdown)

@@ -1,0 +1,1 @@
+[Previous](./newpractice.markdown) | [Up](../intro.markdown) | [Next](./prepare/intro.markdown)

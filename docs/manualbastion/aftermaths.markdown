@@ -1,0 +1,1 @@
+[Previous](./netboot.markdown) | [Up](../intro.markdown) | [Next](../industry/intro.markdown)
