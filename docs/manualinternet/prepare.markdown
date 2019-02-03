@@ -6,7 +6,7 @@
 |---|:------------------:| ---------------------------------:|----:|------:|------:|---------------:|--------------:|-------------:|
 | 1 | IPFire             | [IPFire](https://www.ipfire.org/) | 1   | 512Mb | 1Gb   | 192.168.56.254 | 255.255.255.0 |  | 
 | 2 | Storage            | [CentOS](https://www.centos.org/) | 2   | 2Gb   | 320Gb | 192.168.56.253 | 255.255.255.0 | 192.168.56.254 |
-| 3 | Pacient            | Microsoft Windows 7/8.1/10        | 2   | 4Gb   | 40Gb  | DHCP           | 255.255.255.0 | 192.168.56.254 |
+| 3 | Pacient            | Microsoft Windows 7/8.1/10        | 2   | 4Gb   | 32Gb  | DHCP           | 255.255.255.0 | 192.168.56.254 |
 
 Виртуальная машина IPFire имеет два сетевых интерфейса - NAT, Internal. Остальные машины имеют сетевой интерфейс Internal. Это сделано, чтобы у виртуальных машин был доступ к интернету, чтобы хост также имел доступ к виртуальным машинам и изолировать виртуальные машины от прямого доступа из вне.
 
@@ -54,6 +54,17 @@ TODO - Insert VirtualBox-NetworkInterfaces-Setup
 |  №35. Жесткий диск добавлен в виртуальную машину |  ![Picture35](/images/dm_virtualbox_settings_35.png) |
 |  №36. Изменим настройки сети |  ![Picture36](/images/dm_virtualbox_settings_36.png) |
 |  №37. Виртуальная машина готова к запуску |  ![Picture37](/images/dm_virtualbox_settings_37.png) |
+|  №38. Создаем виртуальную машину Pacient |  ![Picture38](/images/dm_virtualbox_settings_38.png) |
+|  №39. Задаем объем памяти |  ![Picture39](/images/dm_virtualbox_settings_39.png) |
+|  №40. Добавим жесткий диск |  ![Picture40](/images/dm_virtualbox_settings_40.png) |
+|  №41. Выберем формат жесткого диска |  ![Picture41](/images/dm_virtualbox_settings_41.png) |
+|  №42. Выберем тип жесткого диска |  ![Picture42](/images/dm_virtualbox_settings_42.png)|
+|  №43. Ожидаем пока создаться жесткий диск |  ![Picture44](/images/dm_virtualbox_settings_44.png) |
+|  №44. Ждем пока идет процесс создания жесткого диска |  ![Picture44](/images/dm_virtualbox_settings_44.png) |
+|  №45. Изменим настройки сети |  ![Picture47](/images/dm_virtualbox_settings_47.png) |
+|  №46. Запуск виртуальной машины |  ![Picture45](/images/dm_virtualbox_settings_45.png) |
+|  №47. Выберем сетевую загрузку |  ![Picture46](/images/dm_virtualbox_settings_46.png) |
+
 
 # Установка и настройка IPFIRE
 
@@ -94,9 +105,12 @@ TODO - Insert VirtualBox-NetworkInterfaces-Setup
 |  №31. Завершим настройку сетевых интерфейсов |  ![Picture31](/images/dm_virtualbox_ipfire_31.png) |
 |  №32. Выходим из меню Сетевых настроек |  ![Picture32](/images/dm_virtualbox_ipfire_32.png)|
 |  №33. Настроем DHCP-сервер на сетевом интерфейсе GREEN |  ![Picture33](/images/dm_virtualbox_ipfire_33.png) |
-|  №34. Настройка завершена |  ![Picture34](/images/dm_virtualbox_ipfire_34.png) |
+|  №35. Откроем веб-консоль IPFire по адресу http://192.168.56.254:81 |   |
+|  №36. Откроем настройки DHCP-сервера |  ![Picture35](/images/dm_virtualbox_ipfire_35.png) |
+|  №37. Добавим новые опции |  ![Picture36](/images/dm_virtualbox_ipfire_36.png) |
 
-# Установка и настройка Centos
+
+# Установка Centos
 
 Установка CentOS будет проведена в ручном режиме, для установки использовался последний доступный релиз. Установка через kickstart-файл будет доступна позднее.
 
@@ -129,6 +143,100 @@ TODO - Insert VirtualBox-NetworkInterfaces-Setup
 |  №25. Начнем процесс установки |  ![Picture25](/images/dm_virtualbox_storage_25.png) |
 |  №26. Установка завершена |  ![Picture26](/images/dm_virtualbox_storage_26.png) |
 
+# Первичная настройка Centos
+
+Шаги:
+
+* Создадим нового пользователя;
+* Настроем sudo;
+* Настроем сеть;
+* Обновим пакеты в системе;
+
+
+|  Шаги | Картина  |
+|-------|----------|
+|  №27. Заходим в систему под суперпользователем |  ![Picture27](/images/dm_virtualbox_storage_27.png) |
+|  №28. Создаем нового пользователя, задаем пароль |  ![Picture28](/images/dm_virtualbox_storage_28.png)|
+|  №29. Добавим пользователя в группу wheel, необходимо для sudo |  ![Picture29](/images/dm_virtualbox_storage_29.png) |
+|  №30. Заходим под пользователем  |  ![Picture30](/images/dm_virtualbox_storage_30.png) |
+|  №31. Проверяем sudo |  ![Picture31](/images/dm_virtualbox_storage_31.png) |
+|  №32. Узнаем текущие настройки сети |  ![Picture32](/images/dm_virtualbox_storage_32.png)|
+|  №33. Изменим настройки сети |  ![Picture33](/images/dm_virtualbox_storage_33.png) |
+|  №34. Текущие настройки сети |  ![Picture34](/images/dm_virtualbox_storage_34.png) |
+|  №35. Изменим настройки сети на статический адрес |  ![Picture35](/images/dm_virtualbox_storage_35.png) |
+|  №36. Перегрузим сетевую службу, проверяем настройки сети |  ![Picture36](/images/dm_virtualbox_storage_36.png) |
+|  №37. Проверим, что сеть работает |  ![Picture37](/images/dm_virtualbox_storage_37.png) |
+|  №38. Обновим пакеты в системе |  ![Picture38](/images/dm_virtualbox_storage_38.png) |
+|  №39. Процесс обновления пакетов |  ![Picture39](/images/dm_virtualbox_storage_39.png) |
+|  №40. Процесс обновления пакетов, перезагружаемся |  ![Picture40](/images/dm_virtualbox_storage_40.png) |
+|  №41. Процесс обновления завершен |  ![Picture41](/images/dm_virtualbox_storage_41.png) |
+|  №42. Устанавливаю дополнительные пакеты |  ![Picture42](/images/dm_virtualbox_storage_42.png)|
+|  №43. Пакеты установлены |  ![Picture43](/images/dm_virtualbox_storage_43.png) |
+
+# Настройка Samba
+
+Шаги:
+
+* Установим необходимые пакеты;
+* Разобъем жесткий диск;
+* Отформатируем жесткий диск;
+* Создадим новый сервис;
+* Настроем samba;
+* Попробуем подключиться с компьютера на сетевую папку;
+
+|  Шаги | Картина  |
+|-------|----------|
+|  №44. Устанавливаем необходимые пакеты |  ![Picture44](/images/dm_virtualbox_storage_44.png) |
+|  №45. Установка пакетов завершена |  ![Picture45](/images/dm_virtualbox_storage_45.png) |
+|  №46. Начинаем разбивать жесткий диск |  ![Picture46](/images/dm_virtualbox_storage_46.png) |
+|  №47. Создаем gpt, новый раздел |  ![Picture47](/images/dm_virtualbox_storage_47.png) |
+|  №48. Форматируем новый раздел в xfs|  ![Picture48](/images/dm_virtualbox_storage_48.png) |
+|  №49. Создадим сервис-mount для нового раздела |  ![Picture49](/images/dm_virtualbox_storage_49.png) |
+|  №50. Содержимое нового сервиса |  ![Picture50](/images/dm_virtualbox_storage_50.png) |
+|  №51. Включаем автозагрузку и старт нового сервиса |  ![Picture51](/images/dm_virtualbox_storage_51.png) |
+|  №52. Настройки samba |  ![Picture52](/images/dm_virtualbox_storage_52.png)|
+|  №53. Содержимое конфигурационного файла /etc/samba/smb.conf |  ![Picture53](/images/dm_virtualbox_storage_53.png) |
+|  №54. Настроем фаервол |  ![Picture54](/images/dm_virtualbox_storage_54.png) |
+|  №55. Включаем автозагрузку и старт сервисов smb,nmb |  ![Picture55](/images/dm_virtualbox_storage_55.png) |
+|  №56. Попробуем зайти на сетевую папку |  ![Picture56](/images/dm_virtualbox_storage_56.png) |
+|  №57. Сетевая папка открылась, все правильно |  ![Picture57](/images/dm_virtualbox_storage_57.png) |
+
+# Настройка загрузки по сети
+
+Шаги:
+
+* Установим необходимые пакеты;
+* Разобъем жесткий диск;
+* Отформатируем жесткий диск;
+* Создадим новый сервис;
+* Настроем samba;
+* Попробуем подключиться с компьютера на сетевую папку;
+
+|  Шаги | Картина  |
+|-------|----------|
+|  №58. Форматируем новый раздел в xfs|  ![Picture58](/images/dm_virtualbox_storage_58.png) |
+|  №59. Создадим сервис-mount для нового раздела |  ![Picture59](/images/dm_virtualbox_storage_59.png) |
+|  №60. Содержимое нового сервиса |  ![Picture60](/images/dm_virtualbox_storage_60.png) |
+|  №61. Включаем автозагрузку и старт нового сервиса |  ![Picture61](/images/dm_virtualbox_storage_61.png) |
+|  №62. Настройки samba |  ![Picture62](/images/dm_virtualbox_storage_62.png)|
+|  №63. Содержимое конфигурационного файла /etc/samba/smb.conf |  ![Picture63](/images/dm_virtualbox_storage_63.png) |
+|  №64. Настроем фаервол |  ![Picture64](/images/dm_virtualbox_storage_64.png) |
+|  №65. Включаем автозагрузку и старт сервисов smb,nmb |  ![Picture65](/images/dm_virtualbox_storage_65.png) |
+|  №66. Попробуем зайти на сетевую папку |  ![Picture66](/images/dm_virtualbox_storage_66.png) |
+|  №67. Сетевая папка открылась, все правильно |  ![Picture67](/images/dm_virtualbox_storage_67.png) |
+|  №68. Форматируем новый раздел в xfs|  ![Picture68](/images/dm_virtualbox_storage_68.png) |
+|  №69. Создадим сервис-mount для нового раздела |  ![Picture69](/images/dm_virtualbox_storage_69.png) |
+|  №70. Содержимое нового сервиса |  ![Picture70](/images/dm_virtualbox_storage_70.png) |
+|  №71. Включаем автозагрузку и старт нового сервиса |  ![Picture71](/images/dm_virtualbox_storage_71.png) |
+|  №72. Настройки samba |  ![Picture72](/images/dm_virtualbox_storage_72.png)|
+|  №73. Содержимое конфигурационного файла /etc/samba/smb.conf |  ![Picture73](/images/dm_virtualbox_storage_73.png) |
+|  №74. Настроем фаервол |  ![Picture74](/images/dm_virtualbox_storage_74.png) |
+|  №75. Включаем автозагрузку и старт сервисов smb,nmb |  ![Picture75](/images/dm_virtualbox_storage_75.png) |
+|  №76. Попробуем зайти на сетевую папку |  ![Picture76](/images/dm_virtualbox_storage_76.png) |
+|  №77. Сетевая папка открылась, все правильно |  ![Picture77](/images/dm_virtualbox_storage_77.png) |
+|  №78. Форматируем новый раздел в xfs|  ![Picture78](/images/dm_virtualbox_storage_78.png) |
+|  №79. Создадим сервис-mount для нового раздела |  ![Picture79](/images/dm_virtualbox_storage_79.png) |
+|  №80. Содержимое нового сервиса |  ![Picture80](/images/dm_virtualbox_storage_80.png) |
 
 **Задачи**:
 
