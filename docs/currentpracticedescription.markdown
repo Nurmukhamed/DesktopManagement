@@ -25,6 +25,8 @@
 
 ## Установка
 
+![](http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuTBGqbJGBSfCpoZHjLDGkh3uOkF5fWiRBkoziE_2fWkxBcpW0ZBsNzXwiU72Xejj5tO0UNl1aZiLBZPUs05MlVN2delTIWg9nGgEoIMP-Nc6N50Qhy4AGCP6A7Stq8ozGCDtac6R4HUKncyRaBa1QDy-aD5S5_O3gNqNDeCu5_O0uLuGxy8-i9k0rZU27T4ESTN5VYJRZBcWD2csRG7RinCe1_GPI0sIWIPSK1fX831Ak1nIyrA0qGC0)
+
 ![](https://github.com/Nurmukhamed/DesktopManagement/blob/master/images/total_time_of_install_system.svg)
 
 Процесс установки линейный, время затрачиваемое на установку рабочей станции складывается из:
