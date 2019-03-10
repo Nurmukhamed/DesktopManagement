@@ -18,9 +18,10 @@
 
 Начиная с версии Windows 7 Microsoft внедрила новый формат [Windows Imaging Format, WIM](https://ru.wikipedia.org/wiki/Windows_Imaging_Format). В любой момент можно сохранить состояние текущей операционной системы в образе wim. Фиксируя окончание каждого этапа и сохраняя результаты работы в виде системного архива в формате wim, мы получаем возможность повторного использования результатов работы. 
 
-**ТУДУ** Вставить рисунок изменения процесса
-
 Этапы установки:
+
+![](http://www.plantuml.com/plantuml/png/fPRHYjD058RlprCCUwL2PMVIpIuYo_P2V83rJho8wxe6R8KsugrLr0k5WWyWYYyGsuQcjarVuSmRUJATWtCnmSIXbFzFPlBFcVCn91UJB1bdhuSluTQTsw8tJczUPBrpSNJ_wVdbey731vBCFG7uKq_rEynnXnNEyJVcWimU2_qMS_qHIxhQcS6rq5CipUm2j_hpaKWcOd2LfQz64goANhq4_i1AVw20EhMWVub5dVhBt5fXxZogmAfvb2fEdoTNcRZCafjhUVTDEkHn6_qTSofZNnU2-I7QIOl0gftz5IigsDtWvcz19QwQgkg3LPFpc5OjSA7VuqRFQ3ObsGrng7UNJ_pTOG2g1k3hloTu3VYjAvGJiDeTIWnMFL2K0oLk1UKKh0P2EGEheL0ytM4eKHCKiZb5LtKEu9wameK9tT9lLrzXPLOYIbF3wjEX03rpJyeniEcEHKfWum4JEM2aR4L6Ac0Jo4P6m2Q8ZhzD3fz1ywcX6qiiQC4lp0DSQgAH6lmRsmcm-GziCR3nOKjSRd4xRgV09fJR6R09vERl4tFhjpjNInEufh72i9gxRufZODETWPB0niEWxo1GxOwEKi0c486AW4qO0d-RwEqF5zUZP_Gby0S0)
+
 
 * Этап 1 - Установка ОС;
 * Этап 2 - установка обновлений ОС;
